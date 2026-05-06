@@ -2,6 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Mandatory Workflow — Obsidian Vault
+
+**Before** any task in this project (coding, content, design, architecture, bugfix, review, refactor) — **and again at the end** — you MUST follow the protocol defined in [`.claude/skills/obsidian-vault-workflow/SKILL.md`](.claude/skills/obsidian-vault-workflow/SKILL.md).
+
+In short:
+
+- **Phase 1 (start):** name the topic, locate / read its file under `vault/` (Meeting Notes / Content Briefs / Publishing Log / Brand Guidelines), plus 2–3 recent Meeting Notes and any matching Content Briefs / Brand Guidelines. Report what you loaded in one sentence.
+- **Phase 2 (end):** append `### YYYY-MM-DD — <title> [status]` at the bottom of the topic file's `## Session Log`, update Overview if scope/status changed, maintain `## Open Questions`, include `**Related:** [[wikilinks]]`, and add the topic line to the folder's `_index.md` if new. Read back to verify.
+
+Per-file reference docs live under [`vault/Code Reference/`](vault/Code%20Reference/) — read the relevant entry there if your task touches a specific file.
+
+Skip only for purely informational Q&A that touches zero files and produces zero decisions.
+
 ## Project Overview
 
 **the-5-agents** הוא פרויקט של צוות סוכנים ליצירת תוכן.
