@@ -38,3 +38,4 @@ One markdown note per project artifact (top-level config files, installed skills
 - [[verification-before-completion]] — Run real verification commands before claiming "done"
 - [[writing-plans]] — Author implementation plans before touching code
 - [[writing-skills]] — Create / edit / verify skills before deployment
+- [[skill-creator]] — Official Anthropic skill for creating, eval-ing, and optimizing skills (project-scoped plugin)

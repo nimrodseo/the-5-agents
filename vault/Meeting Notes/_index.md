@@ -13,3 +13,4 @@ Code, architecture, design, and engineering-decision logs. One topic file per ar
 ## Topics
 
 - [[vault-initial-setup]] — Initial creation of `vault/` skeleton and Code Reference docs (2026-05-06)
+- [[skill-creator-installation]] — Install skill-creator from anthropics/skills at project scope (2026-05-06)
