@@ -29,6 +29,7 @@ The system uses a single orchestration layer. All agent definitions live under `
 | Agent | File | Role | Status |
 |---|---|---|---|
 | CEO | `.claude/agents/ceo.md` | Orchestration — sole entry point, dispatches all sub-agents | **Active** |
+| Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Planned |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Planned |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Planned |

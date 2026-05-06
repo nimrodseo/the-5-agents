@@ -52,10 +52,19 @@ Stop and request explicit user approval before any of the following. No exceptio
 | Agent | File | Role | Status |
 |---|---|---|---|
 | CEO | `.claude/agents/ceo.md` | Orchestration and decision-making | **Active** |
+| Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Not Implemented |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Not Implemented |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Not Implemented |
 | Content | `.claude/agents/content.md` | General content creation | Not Implemented |
+
+## Image Generation Routing
+
+Route to Yuval for any request that includes these keywords (Hebrew or English):
+
+**Hebrew:** תמונה של, ציור של, צור תמונה, עצב לי, תמונת רקע, פוסטר, באנר, ויזואל, אייקון, לוגו
+
+**English:** generate image, create image, design a, make a poster, make a banner, visual for, illustration of, draw a, image of, artwork for, thumbnail, hero image, icon, logo
 
 ## Delegation Protocol
 

@@ -40,9 +40,14 @@ One markdown note per project artifact (top-level config files, installed skills
 - [[writing-skills]] — Create / edit / verify skills before deployment
 - [[skill-creator]] — Official Anthropic skill for creating, eval-ing, and optimizing skills (project-scoped plugin)
 
+### Skills (project-custom, under `.claude/skills/`)
+
+- [[gpt-image-gen-skill]] — OpenAI Images API wrapper; generates PNG from prompt; used by yuval agent
+
 ### Agents (under `.claude/agents/`)
 
 - [[ceo-agent]] — CEO Agent: sole orchestration layer, dispatches and monitors all sub-agents (active)
+- [[yuval-agent]] — Yuval: creative image agent; reference-based style extraction + gpt-image-gen (active)
 - Marketing Agent — `.claude/agents/marketing.md` — planned, not yet implemented
 - Sales Agent — `.claude/agents/sales.md` — planned, not yet implemented
 - Dev Agent — `.claude/agents/dev.md` — planned, not yet implemented
