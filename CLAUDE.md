@@ -31,6 +31,7 @@ The system uses a single orchestration layer. All agent definitions live under `
 | CEO | `.claude/agents/ceo.md` | Orchestration — sole entry point, dispatches all sub-agents | **Active** |
 | Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
 | Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
+| Chen | `.claude/agents/chen.md` | Web research; deposits findings in Content/ for Yael | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Planned |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Planned |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Planned |

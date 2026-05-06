@@ -54,6 +54,7 @@ Stop and request explicit user approval before any of the following. No exceptio
 | CEO | `.claude/agents/ceo.md` | Orchestration and decision-making | **Active** |
 | Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
 | Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
+| Chen | `.claude/agents/chen.md` | Web research; deposits findings in Content/ for Yael | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Not Implemented |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Not Implemented |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Not Implemented |
@@ -73,6 +74,13 @@ Route to Yael for any request that includes these keywords (Hebrew or English):
 **Hebrew:** שכתב, ערוך, נסח מחדש, תרגם, סכם, מאמר, תוכן, פוסט
 
 **English:** rewrite, edit, rephrase, translate, summarize, article, content, post
+
+## Web Research Routing
+
+Route to Chen for any request that includes these keywords (Hebrew or English):
+
+**Hebrew:** חפש, מחקר, מצא, גוגל, מקורות, כתבות, מידע על, תחקר
+**English:** research, find, search, look up, find sources, gather info, investigate
 
 ## IMAGE_NEEDED Placeholder Protocol
 
