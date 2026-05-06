@@ -48,7 +48,7 @@ One markdown note per project artifact (top-level config files, installed skills
 
 - [[ceo-agent]] — CEO Agent: sole orchestration layer, dispatches and monitors all sub-agents (active)
 - [[yuval-agent]] — Yuval: creative image agent; reference-based style extraction + gpt-image-gen (active)
+- [[yael-agent]] — Yael: content writer; LLM-only, rewrites Content/ → Output/ with IMAGE_NEEDED placeholders (active)
 - Marketing Agent — `.claude/agents/marketing.md` — planned, not yet implemented
 - Sales Agent — `.claude/agents/sales.md` — planned, not yet implemented
 - Dev Agent — `.claude/agents/dev.md` — planned, not yet implemented
-- Content Agent — `.claude/agents/content.md` — planned, not yet implemented

@@ -53,10 +53,10 @@ Stop and request explicit user approval before any of the following. No exceptio
 |---|---|---|---|
 | CEO | `.claude/agents/ceo.md` | Orchestration and decision-making | **Active** |
 | Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
+| Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Not Implemented |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Not Implemented |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Not Implemented |
-| Content | `.claude/agents/content.md` | General content creation | Not Implemented |
 
 ## Image Generation Routing
 
@@ -65,6 +65,28 @@ Route to Yuval for any request that includes these keywords (Hebrew or English):
 **Hebrew:** תמונה של, ציור של, צור תמונה, עצב לי, תמונת רקע, פוסטר, באנר, ויזואל, אייקון, לוגו
 
 **English:** generate image, create image, design a, make a poster, make a banner, visual for, illustration of, draw a, image of, artwork for, thumbnail, hero image, icon, logo
+
+## Content Writing Routing
+
+Route to Yael for any request that includes these keywords (Hebrew or English):
+
+**Hebrew:** שכתב, ערוך, נסח מחדש, תרגם, סכם, מאמר, תוכן, פוסט
+
+**English:** rewrite, edit, rephrase, translate, summarize, article, content, post
+
+## IMAGE_NEEDED Placeholder Protocol
+
+Yael cannot dispatch other sub-agents. When she identifies a place that needs an illustration, she leaves a placeholder in her output. You — the CEO — own the cross-agent stitching.
+
+When Yael returns output containing `{{IMAGE_NEEDED: "<prompt>"}}` placeholders, you must:
+
+1. Parse the output for every occurrence — regex: `\{\{IMAGE_NEEDED:\s*"([^"]+)"\}\}`
+2. For each match, dispatch Yuval with the captured prompt as the image generation request
+3. Replace the placeholder in the document with a markdown image reference: `![<2-3 word caption>](<path-Yuval-returned>)`
+4. Save the fully-illustrated final version to `Output/<original-filename>.md` (overwrite the placeholder version)
+5. Log the workflow to vault: which Yael output, how many placeholders, which Yuval images were generated, final path
+
+Sub-agents do not invoke other sub-agents in this system. The placeholder protocol is the only sanctioned channel by which Yael and Yuval coordinate — through you.
 
 ## Delegation Protocol
 

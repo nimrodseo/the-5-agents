@@ -16,3 +16,4 @@ Code, architecture, design, and engineering-decision logs. One topic file per ar
 - [[skill-creator-installation]] — Install skill-creator from anthropics/skills at project scope (2026-05-06)
 - [[ceo-agent-definition]] — CEO Agent definition: ceo.md + 4 sub-agent stubs + vault docs (2026-05-06)
 - [[gpt-image-gen-skill-and-yuval-agent]] — gpt-image-gen skill + Yuval creative agent with reference-based style extraction (2026-05-06)
+- [[yael-content-writer-agent]] — Yael LLM-only writer; rewrites Content/ → Output/ with IMAGE_NEEDED placeholder protocol mediating Yuval handoff (2026-05-06)

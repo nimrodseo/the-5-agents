@@ -30,10 +30,10 @@ The system uses a single orchestration layer. All agent definitions live under `
 |---|---|---|---|
 | CEO | `.claude/agents/ceo.md` | Orchestration — sole entry point, dispatches all sub-agents | **Active** |
 | Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
+| Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Planned |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Planned |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Planned |
-| Content | `.claude/agents/content.md` | General long-form content creation | Planned |
 
 To invoke the CEO Agent, dispatch it via Task with the task description. The CEO handles routing to sub-agents internally. Sub-agents marked "Planned" are stubbed with defined interfaces but not yet implemented.
 
