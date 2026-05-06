@@ -14,3 +14,4 @@ Code, architecture, design, and engineering-decision logs. One topic file per ar
 
 - [[vault-initial-setup]] — Initial creation of `vault/` skeleton and Code Reference docs (2026-05-06)
 - [[skill-creator-installation]] — Install skill-creator from anthropics/skills at project scope (2026-05-06)
+- [[ceo-agent-definition]] — CEO Agent definition: ceo.md + 4 sub-agent stubs + vault docs (2026-05-06)

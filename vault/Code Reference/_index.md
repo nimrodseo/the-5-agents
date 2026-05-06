@@ -39,3 +39,11 @@ One markdown note per project artifact (top-level config files, installed skills
 - [[writing-plans]] — Author implementation plans before touching code
 - [[writing-skills]] — Create / edit / verify skills before deployment
 - [[skill-creator]] — Official Anthropic skill for creating, eval-ing, and optimizing skills (project-scoped plugin)
+
+### Agents (under `.claude/agents/`)
+
+- [[ceo-agent]] — CEO Agent: sole orchestration layer, dispatches and monitors all sub-agents (active)
+- Marketing Agent — `.claude/agents/marketing.md` — planned, not yet implemented
+- Sales Agent — `.claude/agents/sales.md` — planned, not yet implemented
+- Dev Agent — `.claude/agents/dev.md` — planned, not yet implemented
+- Content Agent — `.claude/agents/content.md` — planned, not yet implemented

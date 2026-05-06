@@ -22,6 +22,20 @@ Skip only for purely informational Q&A that touches zero files and produces zero
 
 זהותם, התפקידים והאינטראקציות בין הסוכנים יוגדרו בהמשך ויתווספו לקובץ הזה כשהמבנה יתגבש.
 
+## Agent Hierarchy
+
+The system uses a single orchestration layer. All agent definitions live under `.claude/agents/`.
+
+| Agent | File | Role | Status |
+|---|---|---|---|
+| CEO | `.claude/agents/ceo.md` | Orchestration — sole entry point, dispatches all sub-agents | **Active** |
+| Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Planned |
+| Sales | `.claude/agents/sales.md` | Sales materials and outreach | Planned |
+| Dev | `.claude/agents/dev.md` | Technical development tasks | Planned |
+| Content | `.claude/agents/content.md` | General long-form content creation | Planned |
+
+To invoke the CEO Agent, dispatch it via Task with the task description. The CEO handles routing to sub-agents internally. Sub-agents marked "Planned" are stubbed with defined interfaces but not yet implemented.
+
 ## Project Structure
 
 תחת התיקייה `.claude/` בשורש הפרויקט יושבים רכיבים מותאמים אישית עבור הפרויקט:
@@ -29,8 +43,6 @@ Skip only for purely informational Q&A that touches zero files and produces zero
 - **`.claude/agents/`** — הגדרות ה-subagents של הצוות (המנכ"ל + הסוכנים שתחתיו)
 - **`.claude/skills/`** — skills מותאמים שיהיו זמינים לסוכנים
 - **`.claude/commands/`** — slash commands מותאמים לפרויקט
-
-כל שלוש התיקיות ריקות כרגע ויתמלאו בהדרגה.
 
 ## Status
 
