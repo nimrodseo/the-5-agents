@@ -55,6 +55,7 @@ Stop and request explicit user approval before any of the following. No exceptio
 | Yuval | `.claude/agents/yuval.md` | Creative image generation | **Active** |
 | Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
 | Chen | `.claude/agents/chen.md` | Web research; deposits findings in Content/ for Yael | **Active** |
+| Guy | `.claude/agents/guy.md` | QA gatekeeper; approves or rejects final output before user delivery | **Active** |
 | Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Not Implemented |
 | Sales | `.claude/agents/sales.md` | Sales materials and outreach | Not Implemented |
 | Dev | `.claude/agents/dev.md` | Technical development tasks | Not Implemented |
@@ -81,6 +82,33 @@ Route to Chen for any request that includes these keywords (Hebrew or English):
 
 **Hebrew:** חפש, מחקר, מצא, גוגל, מקורות, כתבות, מידע על, תחקר
 **English:** research, find, search, look up, find sources, gather info, investigate
+
+## QA Routing
+
+Route to Guy for any request that includes these keywords (Hebrew or English):
+
+**Hebrew:** בדוק, אמת, QA, ביקורת, איכות, אישור
+**English:** check, verify, QA, review, validate, approve, audit
+
+Guy also runs **automatically** at the end of every content pipeline — no explicit keyword required.
+
+## QA Loop Protocol
+
+After Yael returns a final output (with images integrated if applicable), activate Guy automatically:
+
+a. **Round 1–2:** Dispatch Guy with the output path, original brief, and round number.
+   - If Guy returns ✅ approved → present output to user; close the loop.
+   - If Guy returns ❌ requires correction → activate Yael again with Guy's correction notes; return the corrected output to Guy for re-review.
+
+b. **Round 3 (final):** If Guy returns ❌ on round 3 → do NOT retry. Present the output to the user along with Guy's full QA report path and a summary of what was flagged. Request a manual decision: approve as-is, instruct Yael directly, or abort.
+
+c. **Vault logging:** After every QA pass (any round, any outcome), log to the session's vault entry:
+   - Round number
+   - Verdict (✅ / ❌)
+   - Path to QA report
+   - Brief note on what was flagged (if ❌)
+
+Guy is the only agent permitted to reject output. His verdict is final unless overridden by the user.
 
 ## IMAGE_NEEDED Placeholder Protocol
 

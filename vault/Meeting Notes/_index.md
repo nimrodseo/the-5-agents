@@ -18,3 +18,4 @@ Code, architecture, design, and engineering-decision logs. One topic file per ar
 - [[gpt-image-gen-skill-and-yuval-agent]] — gpt-image-gen skill + Yuval creative agent with reference-based style extraction (2026-05-06)
 - [[yael-content-writer-agent]] — Yael LLM-only writer; rewrites Content/ → Output/ with IMAGE_NEEDED placeholder protocol mediating Yuval handoff (2026-05-06)
 - [[chen-web-research-agent]] — Chen web-research agent: memory-checked searches, deposits to Content/, pipeline integration with Yael (2026-05-06)
+- [[guy-qa-agent]] — Guy QA agent: structured checklist, 3-round loop with CEO, final gate before user delivery (2026-05-07)
