@@ -33,9 +33,6 @@ The system uses a single orchestration layer. All agent definitions live under `
 | Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
 | Chen | `.claude/agents/chen.md` | Web research; deposits findings in Content/ for Yael | **Active** |
 | Guy | `.claude/agents/guy.md` | QA gatekeeper; final approval before output reaches user | **Active** |
-| Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Planned |
-| Sales | `.claude/agents/sales.md` | Sales materials and outreach | Planned |
-| Dev | `.claude/agents/dev.md` | Technical development tasks | Planned |
 
 To invoke the CEO Agent, dispatch it via Task with the task description. The CEO handles routing to sub-agents internally. Sub-agents marked "Planned" are stubbed with defined interfaces but not yet implemented.
 

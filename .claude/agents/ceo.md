@@ -56,9 +56,6 @@ Stop and request explicit user approval before any of the following. No exceptio
 | Yael | `.claude/agents/yael.md` | Content rewriting in house style | **Active** |
 | Chen | `.claude/agents/chen.md` | Web research; deposits findings in Content/ for Yael | **Active** |
 | Guy | `.claude/agents/guy.md` | QA gatekeeper; approves or rejects final output before user delivery | **Active** |
-| Marketing | `.claude/agents/marketing.md` | Marketing content and campaigns | Not Implemented |
-| Sales | `.claude/agents/sales.md` | Sales materials and outreach | Not Implemented |
-| Dev | `.claude/agents/dev.md` | Technical development tasks | Not Implemented |
 
 ## Image Generation Routing
 
